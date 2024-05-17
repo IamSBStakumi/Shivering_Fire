@@ -9,10 +9,11 @@ packages = [
 ]
 
 [tool.poetry.dependencies]
-python = "^3.11"
+python = ">=3.11,<3.13"
 pygame = "^2.5.2"
 flake8 = "^7.0.0"
 black = "^24.4.2"
+pyinstaller = "^6.6.0"
 
 
 [build-system]

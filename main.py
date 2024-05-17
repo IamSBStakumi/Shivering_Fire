@@ -27,8 +27,6 @@ def main():
     is_roop = True
     # 終了イベントまでループを回す
     while is_roop:
-        # テスト用出力
-        print("Hello, World")
         # イベントを取得
         for event in pygame.event.get():
             # 終了イベント（×クリック）でループを抜ける
