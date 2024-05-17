@@ -5,6 +5,12 @@
 ![](https://img.shields.io/badge/-Python-F9DC3E.svg?logo=python&style=flat)
 ![](https://img.shields.io/badge/-Poetry-75E193.svg?logo=poetry&style=flat)
 
+# Motive
+
+`Shivering Fire` is one of the games featured in my favorite manga `Junket Bank`.
+
+I am creating a program based on this game as a reference.
+
 # Requirement
 
 - Python 3.11.9
