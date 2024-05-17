@@ -1,27 +1,43 @@
 # Shivering_Fire
 
-## 開発環境
+![](https://img.shields.io/badge/-Windows10_Pro-113124.svg?logo=Windows10&?style=flat)
 
-Windows10 Pro
+![](https://img.shields.io/badge/-Python-F9DC3E.svg?logo=python&style=flat)
+![](https://img.shields.io/badge/-Poetry-75E193.svg?logo=poetry&style=flat)
 
-## 開発言語
+# Requirement
 
-- Python
-- Poetry
-- Pygame
+- Python 3.11.9
+- poetry 1.8.3
 
-## 起動方法
-
-```
+```bash
 python -m poetry install
 ```
 
+## Usage
+
+Please Clone this repository
+
+```bash
+git clone git@github.com:IamSBStakumi/Shivering_Fire.git
 ```
+
+Run `main.py`
+
+```bash
 python -m poetry run python main.py
 ```
 
-## pyinstaller
+### Run `main.py` as `.exe`
 
 ```
 python -m pyinstaller main.py --onefile --icon=**.ico
 ```
+
+# Note
+
+I don't test environments under Mac.
+
+# Author
+
+**SBS_Takumi**
