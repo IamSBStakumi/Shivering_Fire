@@ -1,11 +1,12 @@
 import sys
 import pygame
+from classes.HealthBar import HealthBar
 
 def main():
     # pygame初期化
     pygame.init()
     # メイン画面の初期化
-    main_surface = pygame.display.set_mode((980, 600))
+    main_surface = pygame.display.set_mode((900, 600))
     # メイン画面のタイトル
     pygame.display.set_caption("シヴァリング・ファイア  Shivering_Fire")
     # フォントオブジェクト生成
@@ -18,6 +19,11 @@ def main():
     main_surface.fill((220, 220, 220))
     # メイン画面にテキストを配置(配置するserface, 座標)
     main_surface.blit(text_serface, (100, 100))
+
+    # HPバーを初期化
+    health_bar = HealthBar(20, 20, 300, 100)
+    # HPバーを描画
+    health_bar.draw(main_surface)
     # メイン画面の更新
     pygame.display.update()
     # Clockオブジェクトの生成
@@ -26,7 +32,7 @@ def main():
     # ループを続けるためのフラグ
     is_roop = True
     # 終了イベントまでループを回す
-    while is_roop:
+    while is_roop:        
         # イベントを取得
         for event in pygame.event.get():
             # 終了イベント（×クリック）でループを抜ける
